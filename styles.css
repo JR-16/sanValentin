@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./sanValentin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 35pt;
+    color: #ec2323;
+    text-shadow: 2px 2px 4px #000000fd;
+}
+
+.container {
+    text-align: center;
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+#siBtn {
+    padding: 10px 20px; 
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ec2323;
+    color: white;
+    border: 2px solid #FFC0CB; /* Bordes rosa */
+    border-radius: 50%; /* Borde redondeado */
+    animation: pulse 1s infinite alternate; /* Animación de palpitación */
+}
+
+#noBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #004f87; /* Azul */
+    color: white;
+    border: 2px solid #FFC0CB; /* Bordes rosa */
+    border-radius: 30px; /* Esquinas semi-redondeadas */
+}
+#noBtn span {
+    font-size: 18px;
+    color: #fcf4f4; /* Cambia el color del texto según tus preferencias */
+}
+
+#siBtn:hover{
+    background-color: #d41b1b;
+}
+#noBtn:hover {
+    background-color: #052238;
+}
+.bg-green {
+    background-color: #ffffff;
+}
+
+#messageContainer {
+    font-size: 40px;
+    color: #ec2323;
+    font-family: 'Caveat', cursive; /* Reemplaza 'tu diseño de fuente' con la fuente que desees */
+    text-shadow: 2px 2px 4px #000; /* Borde simulado */
+    animation: pulse 0.5s infinite alternate; /* Animación de palpitación más rápida */
+}
+
+
+
+@keyframes pulse {
+    from {
+        transform: scale(1); /* Tamaño normal */
+        border-width: 2px; /* Ancho de borde normal */
+    }
+    to {
+        transform: scale(1.1); /* Tamaño ligeramente más grande */
+        border-width: 4px; /* Ancho de borde más grueso */
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('./bgRecorte.jpg');
+        /* aqui vamos a hacer que una imagen se muestre de fondo para celulares */
+    }
+}
